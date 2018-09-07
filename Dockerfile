@@ -16,7 +16,7 @@ RUN opam install lwt cohttp cohttp-lwt-unix
 # ok build our thing
 COPY --chown=opam:nogroup . /hello-reason
 WORKDIR /hello-reason
-RUN sh -c 'eval `opam config env` dune build'
+RUN sh -c 'eval `opam config env` dune build bin/Server.exe'
 
 FROM alpine
 # this is needed by the tls impl
