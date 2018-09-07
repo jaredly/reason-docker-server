@@ -1,4 +1,6 @@
 (executable
   (name Server)
   (modules Server)
-  (libraries cohttp lwt cohttp-lwt-unix))
+  (libraries cohttp lwt cohttp-lwt-unix)
+  (flags (-ccopt -static))
+  )
