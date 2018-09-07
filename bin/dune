@@ -1,0 +1,5 @@
+(executable
+  (name Server)
+  (modules Server)
+  (public_name Server.exe)
+  (libraries cohttp lwt cohttp-lwt-unix))

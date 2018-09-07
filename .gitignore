@@ -1,0 +1,7 @@
+.merlin
+node_modules/
+_build
+_release
+*.byte
+*.native
+*.install
